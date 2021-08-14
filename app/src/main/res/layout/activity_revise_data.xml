@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReviseDataActivity">
+
+    <TextView
+        android:id="@+id/label_InjuryType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/label_WeightBearing"
+        android:textAlignment="viewStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/info_WeeklyData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/label_WeeklyData"
+        android:textAlignment="viewStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_TotalNoOfDays" />
+
+    <TextView
+        android:id="@+id/info_WeeklyAlerts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/label_NoOfSteps"
+        android:textAlignment="textEnd"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintStart_toEndOf="@+id/info_WeeklyData"
+        app:layout_constraintTop_toTopOf="@+id/info_WeeklyData" />
+
+    <com.orthosium.inc.castoffpodmanager.BarGraph
+        android:id="@+id/barGraph"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_NoOfAlerts"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/label_NoOfAlerts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/label_NoOfAlerts"
+        android:textAlignment="textEnd"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintStart_toStartOf="@+id/info_WeeklyAlerts"
+        app:layout_constraintTop_toBottomOf="@+id/info_WeeklyAlerts" />
+
+    <TextView
+        android:id="@+id/data_InjuryType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toBottomOf="@+id/label_InjuryType"
+        app:layout_constraintStart_toEndOf="@+id/label_InjuryType"
+        app:layout_constraintTop_toTopOf="@+id/label_InjuryType"
+        tools:text="asdjklasdkfasd" />
+
+    <TextView
+        android:id="@+id/data_NoOFSteps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toBottomOf="@+id/info_WeeklyAlerts"
+        app:layout_constraintStart_toEndOf="@+id/info_WeeklyAlerts"
+        app:layout_constraintTop_toTopOf="@+id/info_WeeklyAlerts"
+        tools:text="100" />
+
+    <TextView
+        android:id="@+id/data_NoOfAlerts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toBottomOf="@+id/label_NoOfAlerts"
+        app:layout_constraintStart_toEndOf="@+id/label_NoOfAlerts"
+        app:layout_constraintTop_toTopOf="@+id/label_NoOfAlerts"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="15" />
+
+    <TextView
+        android:id="@+id/label_TotalNoOfDays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/label_TotalNoOfDays"
+        android:textAlignment="viewEnd"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/data_front_percent" />
+
+    <TextView
+        android:id="@+id/data_NumberOfDays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toBottomOf="@+id/label_TotalNoOfDays"
+        app:layout_constraintStart_toEndOf="@+id/label_TotalNoOfDays"
+        app:layout_constraintTop_toTopOf="@+id/label_TotalNoOfDays"
+        tools:text="200" />
+
+    <TextView
+        android:id="@+id/data_front_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_InjuryType"
+        tools:text="10%" />
+
+</android.support.constraint.ConstraintLayout>

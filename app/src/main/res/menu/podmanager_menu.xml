@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+tools:context=".ReviseDataActivity">
+    <item android:id="@+id/store_result"
+        android:title="@string/menu_StoreResults"/>
+    <item android:id="@+id/change_bearing"
+        android:title="@string/menu_ChangeWeightBearing" />
+    <item android:id="@+id/reset_pod"
+        android:title="@string/menu_ResetPOD" />
+</menu>

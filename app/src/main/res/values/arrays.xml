@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <string-array name="list_injury_types">
+        <!-- strings length must be great or equal 7 -->
+        <item>Select Mode</item>
+        <item>None</item>
+        <item>Toe Touch</item>
+        <item>Heel</item>
+        <item>Partial</item>
+        <item>Full</item>
+    </string-array>
+</resources>
